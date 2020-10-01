@@ -1,0 +1,72 @@
+Control Statements---
+if statement
+if-else statement
+if-else-if ladder
+nested if statement
+Switch 
+
+Loops-----
+For
+for(initialization;condition;incr/decr){  
+//statement or code to be executed  
+} 
+
+while
+while(condition){  
+//code to be executed  
+}  
+
+do while
+The Java do-while loop is executed at least once because condition is checked after loop body.
+do{  
+//code to be executed  
+}while(condition);  
+
+#### Java for-each Loop
+The for-each loop is used to traverse array or collection in java.
+It is easier to use than simple for loop because we don't need to increment value and use subscript notation.
+It works on elements basis not index. It returns element one by one in the defined variable.
+  
+  int arr[]={12,23,44,56,78};  
+    //Printing array using for-each loop  
+    for(int i:arr){  
+        System.out.println(i);  
+    }
+    
+    
+    
+Break----
+    When a break statement is encountered inside a loop, 
+    the loop is immediately terminated and the program control resumes at the next statement following the loop.
+    The Java break statement is used to break loop or switch statement. 
+    It breaks the current flow of the program at specified condition. In case of inner loop, it breaks only inner loop.
+    
+    
+Continue---
+The continue statement is used in loop control structure when you need to jump to the next iteration of the loop immediately. 
+It can be used with for loop or while loop.
+The Java continue statement is used to continue the loop. It continues the current flow of the program and skips the remaining 
+code at the specified condition. In case of an inner loop, it continues the inner loop only
+
+Comments:
+
+//This is single line comment  
+
+
+/* 
+This  
+is  
+multi line  
+comment 
+*/  
+
+
+/** 
+This  
+is  
+documentation  
+comment 
+*/  
+
+//https://www.javatpoint.com/java-programs
+    
