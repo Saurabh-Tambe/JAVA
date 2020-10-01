@@ -1,0 +1,76 @@
+class OperatorExample{  
+public static void main(String args[]){  
+int x=10;  
+System.out.println(x++);//10 (11)  
+System.out.println(++x);//12  
+System.out.println(x--);//12 (11)  
+System.out.println(--x);//10  
+}}  
+
+
+class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=-10;  
+boolean c=true;  
+boolean d=false;  
+System.out.println(~a);//-11 (minus of total positive value which starts from 0)  ~	NOT - Inverts all the bits
+System.out.println(~b);//9 (positive of total minus, positive starts from 0)  
+System.out.println(!c);//false (opposite of boolean value)  
+System.out.println(!d);//true  
+}} 
+
+class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+System.out.println(a+b);//15  
+System.out.println(a-b);//5  
+System.out.println(a*b);//50  
+System.out.println(a/b);//2  
+System.out.println(a%b);//0  
+}}  
+
+//https://www.w3schools.com/java/java_operators.asp
+The logical && operator doesn't check second condition if first condition is false. It checks second condition only if first one is true.
+
+The bitwise & operator always checks both conditions whether first condition is true or false.
+
+The logical || operator doesn't check second condition if first condition is true. It checks second condition only if first one is false.
+
+The bitwise | operator always checks both conditions whether first condition is true or false.
+
+
+//Ternary Operator
+class OperatorExample{  
+public static void main(String args[]){  
+int a=2;  
+int b=5;  
+int min=(a<b)?a:b;  
+System.out.println(min);  
+}}  
+
+//assignment operator
+int a=10;  
+a+=3;//10+3  
+System.out.println(a);  
+a-=4;//13-4  
+System.out.println(a);  
+a*=2;//9*2  
+System.out.println(a);  
+a/=2;//18/2  
+System.out.println(a); 
+
+class OperatorExample{  
+public static void main(String args[]){  
+short a=10;  
+short b=10;  
+//a+=b;//a=a+b internally so fine  
+a=a+b;//Compile time error because 10+10=20 now int  
+a=(short)(a+b);//20 which is int now converted to short  
+System.out.println(a);  
+}
+
+
+
+ 
