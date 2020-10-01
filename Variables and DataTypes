@@ -1,0 +1,62 @@
+Types of Variables
+There are three types of variables in Java:
+
+1.local variable
+2.instance variable
+3.static variable
+
+1) Local Variable
+      A variable declared inside the body of the method is called local variable. You can use this variable only 
+      within that method and the other methods in the class aren't even aware that the variable exists.
+      A local variable cannot be defined with "static" keyword.
+
+2) Instance Variable
+      A variable declared inside the class but outside the body of the method, is called instance variable. It is not declared as static.
+      It is called instance variable because its value is instance specific and is not shared among instances.
+
+3) Static variable
+    A variable which is declared as static is called static variable. It cannot be local. 
+    You can create a single copy of static variable and share among all the instances of the class. 
+    Memory allocation for static variable happens only once when the class is loaded in the memory
+    
+class A{  
+int data=50;//instance variable  
+static int m=100;//static variable  
+void method(){  
+int n=90;//local variable  
+}  
+}//end of class 
+
+Data Types::
+1.Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+2.Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+There are 8 types of primitive data types:
+
+boolean data type
+byte data type
+char data type
+short data type
+int data type
+long data type
+float data type
+double data type
+
+
+Data Type	    Default Value	    Default size
+boolean	        false	          1 bit
+char	          '\u0000'	      2 byte
+byte	            0             1 byte
+short             0	            2 byte
+int	              0	            4 byte
+long	            0L       	    8 byte
+float	           0.0f	          4 byte
+double	         0.0d	          8 byte
+
+
+Why char uses 2 byte in java and what is \u0000 ?
+It is because java uses Unicode system not ASCII code system. The \u0000 is the lowest range of Unicode system. 
+
+  
+
+
