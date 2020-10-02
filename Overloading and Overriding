@@ -1,0 +1,61 @@
+Different ways to overload the method
+There are two ways to overload the method in java
+
+By changing number of arguments
+By changing the data type
+
+In Java, Method Overloading is not possible by changing the return type of the method only.
+class Adder{  
+static int add(int a,int b)
+{return a+b;}  
+
+static int add(int a,int b,int c)
+{return a+b+c;}  
+}  
+
+Can we overload java main() method?
+    Yes, by method overloading. You can have any number of main methods in a class by method overloading. 
+    But JVM calls main() method which receives string array as arguments only
+    
+If there are no matching type arguments in the method, and each method promotes similar number of arguments, there will be ambiguity.
+class OverloadingCalculation3{  
+  void sum(int a,long b){System.out.println("a method invoked");}  
+  void sum(long a,int b){System.out.println("b method invoked");}  
+  
+  public static void main(String args[]){  
+  OverloadingCalculation3 obj=new OverloadingCalculation3();  
+  obj.sum(20,20);//now ambiguity  
+  }  
+}
+
+
+
+Rules for Java Method Overriding
+The method must have the same name as in the parent class
+The method must have the same parameter as in the parent class.
+There must be an IS-A relationship (inheritance)
+
+a static method cannot be overridden.It is because the static method 
+      is bound with class whereas instance method is bound with an object. 
+      Static belongs to the class area, and an instance belongs to the heap area.
+      
+      
+Access Modifier	      within class      	within package	    outside package by subclass only	      outside package
+Private	                  Y	                    N                   	N	                                  N
+Default	                  Y                   	Y	                    N                                 	N
+Protected	                Y                    	Y                   	Y	                                  N
+Public	                  Y	                    Y                   	Y                                  	Y
+      
+If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive.
+
+If the superclass method does not declare an exception
+  If the superclass method does not declare an exception, subclass overridden method cannot declare 
+  the checked exception but it can declare unchecked exception.
+
+
+If the superclass method declares an exception
+  If the superclass method declares an exception, subclass overridden method can declare same, 
+  subclass exception or no exception but cannot declare parent exception.
+
+
+https://www.javatpoint.com/covariant-return-type
