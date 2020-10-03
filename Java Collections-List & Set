@@ -1,0 +1,110 @@
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+https://static.javatpoint.com/images/java-collection-hierarchy.png
+
+Iterator interface
+Iterator interface provides the facility of iterating the elements in a forward direction only.
+Methods of Iterator interface::
+1	public boolean hasNext()	It returns true if the iterator has more elements otherwise it returns false.
+2	public Object next()	It returns the element and moves the cursor pointer to the next element.
+3	public void remove()	It removes the last elements returned by the iterator. It is less used.
+
+Iterable Interface:
+Iterator<T> iterator()  
+
+Collection Interface:
+The Collection interface is the interface which is implemented by all the classes in the collection framework.
+
+A]List Interface
+List interface is the child interface of Collection interface. 
+It inhibits a list type data structure in which we can store the ordered collection of objects. It can have duplicate values.
+
+List interface is implemented by the classes ArrayList, LinkedList, Vector, and Stack.
+
+A.1}} ArrayList
+    The ArrayList class implements the List interface. 
+    It uses a dynamic array to store the duplicate element of different data types. 
+    The ArrayList class maintains the insertion order and is non-synchronized.
+    The elements stored in the ArrayList class can be randomly accessed. 
+    
+    ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+
+    The important points about Java ArrayList class are:
+      Java ArrayList class can contain duplicate elements.
+      Java ArrayList class maintains insertion order.
+      Java ArrayList class is non synchronized.
+      Java ArrayList allows random access because array works at the index basis.
+      In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+  
+    
+    
+A.2}}LinkedList
+    LinkedList implements the Collection interface. 
+    It uses a doubly linked list internally to store the elements. 
+    It can store the duplicate elements. It maintains the insertion order and is not synchronized. 
+    In LinkedList, the manipulation is fast because no shifting is required.   
+    
+    LinkedList<String> al=new LinkedList<String>();  
+    
+    Java LinkedList class uses a doubly linked list to store the elements. It provides a linked-list data structure. It inherits the AbstractList class and implements List and Deque interfaces.
+
+    The important points about Java LinkedList are:
+      Java LinkedList class can contain duplicate elements.
+      Java LinkedList class maintains insertion order.
+      Java LinkedList class is non synchronized.
+      In Java LinkedList class, manipulation is fast because no shifting needs to occur.
+      Java LinkedList class can be used as a list, stack or queue.
+
+A.3}}Vector
+
+
+A.4}}Stack
+
+
+
+
+
+B]Set Interface
+
+B.1}}HashSet::
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.
+
+The important points about Java HashSet class are:
+
+HashSet stores the elements by using a mechanism called hashing.
+HashSet contains unique elements only.
+HashSet allows null value.
+HashSet class is non synchronized.
+HashSet doesn't maintain the insertion order. Here, elements are inserted on the basis of their hashcode.
+HashSet is the best approach for search operations.
+The initial default capacity of HashSet is 16, and the load factor is 0.75.
+
+	    HashSet<String> set=new HashSet();  
+
+B.2}}LinkedHashSet
+Java LinkedHashSet class is a Hashtable and Linked list implementation of the set interface. It inherits HashSet class and implements Set interface.
+
+The important points about Java LinkedHashSet class are:
+
+Java LinkedHashSet class contains unique elements only like HashSet.
+Java LinkedHashSet class provides all optional set operation and permits null elements.
+Java LinkedHashSet class is non synchronized.
+Java LinkedHashSet class maintains insertion order.
+
+        LinkedHashSet<String> set=new LinkedHashSet();  
+
+
+B.3}}TreeSet
+Java TreeSet class implements the Set interface that uses a tree for storage. It inherits AbstractSet class and implements the NavigableSet interface. The objects of the TreeSet class are stored in ascending order.
+
+The important points about Java TreeSet class are:
+
+Java TreeSet class contains unique elements only like HashSet.
+Java TreeSet class access and retrieval times are quiet fast.
+Java TreeSet class doesn't allow null element.
+Java TreeSet class is non synchronized.
+Java TreeSet class maintains ascending order.
+  TreeSet<String> al=new TreeSet<String>();  
+
+    
